@@ -1,0 +1,39 @@
+:root {
+  --fc-green: #03e167;
+  --fc-teal: #03a791;
+  --fc-dark-teal: #077a7d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f7f9f8;
+  color: #1e1e1e;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blink {
+  color: #ffc107;
+  animation: blink-animation 1.4s infinite;
+}
+
+@keyframes blink-animation {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+.hover-shadow {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
